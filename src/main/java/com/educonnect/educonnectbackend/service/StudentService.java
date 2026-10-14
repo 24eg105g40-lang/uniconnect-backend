@@ -13,8 +13,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Page;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class StudentService {
        @Autowired
        private StudentRepository studentRepository;
